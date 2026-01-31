@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 8.1.1">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha256-VHqXKFhhMxcpubYf9xiWdCiojEbY9NexQ4jh8AxbvcM=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.27.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":true,"style":"mac"},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js" defer></script>
+
+    <meta name="description" content="OpenWrt 插件全览表（基于知识库整合） 以下表格整合自知识库中所有明确提及的 OpenWrt 插件，按功能类别分组，包含软件包名、中文名、核心功能说明及典型应用场景： 🌐 基础系统与界面软件包名称   中文名称   功能说明   典型用途luci   LuCI Web界面   提供图形化配置管理界面   路由器基础配置入口 luci-theme-material   Material主题">
+<meta property="og:type" content="article">
+<meta property="og:title" content="OpenWrt插件全览表">
+<meta property="og:url" content="http://example.com/2026/01/31/OpenWrt%E6%8F%92%E4%BB%B6%E5%85%A8%E8%A7%88%E8%A1%A8/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="OpenWrt 插件全览表（基于知识库整合） 以下表格整合自知识库中所有明确提及的 OpenWrt 插件，按功能类别分组，包含软件包名、中文名、核心功能说明及典型应用场景： 🌐 基础系统与界面软件包名称   中文名称   功能说明   典型用途luci   LuCI Web界面   提供图形化配置管理界面   路由器基础配置入口 luci-theme-material   Material主题">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2026-01-31T15:04:32.000Z">
+<meta property="article:modified_time" content="2026-01-31T15:05:21.930Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="http://example.com/2026/01/31/OpenWrt%E6%8F%92%E4%BB%B6%E5%85%A8%E8%A7%88%E8%A1%A8/">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"http://example.com/2026/01/31/OpenWrt%E6%8F%92%E4%BB%B6%E5%85%A8%E8%A7%88%E8%A1%A8/","path":"2026/01/31/OpenWrt插件全览表/","title":"OpenWrt插件全览表"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>OpenWrt插件全览表 | Hexo</title>
+  
+
+
+
+
+
+
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous" defer></script>
+<script src="/js/utils.js" defer></script><script src="/js/motion.js" defer></script><script src="/js/sidebar.js" defer></script><script src="/js/next-boot.js" defer></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Hexo</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="Search" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-overview-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">John Doe</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">tags</span>
+      </div>
+  </nav>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2026/01/31/OpenWrt%E6%8F%92%E4%BB%B6%E5%85%A8%E8%A7%88%E8%A1%A8/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="OpenWrt插件全览表 | Hexo">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          OpenWrt插件全览表
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2026-01-31 23:04:32 / Modified: 23:05:21" itemprop="dateCreated datePublished" datetime="2026-01-31T23:04:32+08:00">2026-01-31</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>OpenWrt 插件全览表（基于知识库整合）</p>
+<p>以下表格整合自知识库中所有明确提及的 OpenWrt 插件，按功能类别分组，包含软件包名、中文名、核心功能说明及典型应用场景：</p>
+<p>🌐 基础系统与界面<br>软件包名称   中文名称   功能说明   典型用途<br>luci   LuCI Web界面   提供图形化配置管理界面   路由器基础配置入口</p>
+<p>luci-theme-material   Material主题   Material Design 风格UI主题   界面美化</p>
+<p>luci-app-argon-config   Argon主题设置   Argon主题专属配置工具   主题个性化调整</p>
+<p>luci-i18n-chinese   中文语言包   系统界面中文化支持   中文用户友好操作</p>
+<p>luci-app-quickstart   网络向导   新手引导式网络配置   快速初始化设置</p>
+<p>luci-app-store   iStore   应用商店，一键安装插件   插件便捷管理</p>
+<p>luci-app-webadmin   Web管理   增强型Web管理功能   高级配置入口</p>
+<p>luci-app-commands   自定义命令   执行自定义Shell命令   自动化脚本调度</p>
+<p>luci-app-ttyd   TTYD终端   浏览器内嵌SSH终端   无需额外工具远程调试</p>
+<p>📡 网络连接与协议<br>软件包名称   中文名称   功能说明   典型用途<br>ppp-mod-pppoe   PPPoE拨号   宽带账号拨号连接外网   光猫桥接模式上网</p>
+<p>rp-pppoe   PPPoE客户端   标准PPPoE客户端模块   宽带认证</p>
+<p>luci-app-rp-pppoe-server   PPPoE服务器   提供PPPoE服务端功能   企业级认证部署</p>
+<p>kmod-ipv6   IPv6支持   启用IPv6协议栈   新一代网络接入</p>
+<p>ipv6over4   IPv6隧道   IPv6 over IPv4封装传输   兼容老旧网络环境</p>
+<p>kmod-wireless   无线驱动   无线网卡驱动支持   Wi-Fi功能启用</p>
+<p>ifenslave   网卡绑定   多网口聚合（负载均衡&#x2F;冗余）   提升带宽与稳定性</p>
+<p>luci-app-zerotier   ZeroTier   虚拟局域网组网工具   跨公网设备互联</p>
+<p>luci-app-wireguard   WireGuard   轻量级高性能VPN管理   安全远程访问</p>
+<p>luci-app-openvpn   OpenVPN客户端   OpenVPN客户端配置   企业&#x2F;个人安全隧道</p>
+<p>strongswan   StrongSwan   企业级IPsec VPN实现   高安全隧道连接</p>
+<p>luci-app-ocserv   OpenConnect   Cisco AnyConnect兼容服务   企业级SSL VPN</p>
+<p>🚦 网络优化与流量管理<br>软件包名称   中文名称   功能说明   典型用途<br>luci-app-sqm   SQM QoS   智能队列管理，降低延迟   游戏&#x2F;视频通话优化</p>
+<p>qos-scripts   QoS脚本   基础流量整形与优先级控制   带宽合理分配</p>
+<p>luci-app-nft-qos   Nftables QoS   基于nftables的QoS方案   新一代流量调度</p>
+<p>wshaper   带宽限制   按IP&#x2F;设备限速   防止单设备占满带宽</p>
+<p>fast-lane   网速优化   TCP优化提升吞吐量   高延迟网络加速</p>
+<p>luci-app-mwan3helper   MWAN3分流助手   多WAN口负载均衡与故障转移   双宽带聚合</p>
+<p>luci-app-upnp   UPnP   自动端口映射   游戏&#x2F;PT下载免配置</p>
+<p>miniupnpd   UPnP守护进程   UPnP协议底层服务   支撑UPnP功能</p>
+<p>luci-app-vpnbypass   VPN绕过   国内流量直连，国外走代理   提升访问速度</p>
+<p>🔒 网络安全与隐私<br>软件包名称   中文名称   功能说明   典型用途<br>luci-app-adblock   Adblock   基于Hosts的广告过滤   全局网页广告屏蔽</p>
+<p>luci-app-adguardhome   AdGuard Home   DNS级广告&#x2F;跟踪器拦截   家庭网络净化</p>
+<p>luci-app-adbyby-plus   广告屏蔽大师+   多规则广告过滤引擎   深度广告清理</p>
+<p>luci-app-ikoolproxy   iKoolProxy   规则化广告过滤   轻量级广告拦截</p>
+<p>luci-app-dnsfilter   DNS过滤器   自定义DNS过滤策略   内容安全管控</p>
+<p>dnscrypt-proxy   DNS加密   加密DNS查询防劫持   隐私保护与防污染</p>
+<p>luci-app-firewall   防火墙   可视化防火墙规则管理   入站&#x2F;出站流量控制</p>
+<p>iptables-mod-extra   IPTables扩展   增强包过滤能力   高级防火墙策略</p>
+<p>fail2ban   Fail2Ban   暴力破解防护，自动封禁IP   SSH&#x2F;Web服务防护</p>
+<p>luci-app-torproxy   Tor代理   匿名网络代理配置   隐私浏览与绕过限制</p>
+<p>luci-app-clamav   ClamAV   开源病毒扫描引擎   文件安全检测</p>
+<p>📁 共享与下载<br>软件包名称   中文名称   功能说明   典型用途<br>luci-app-samba   Samba共享   Windows风格文件共享   局域网文件互传</p>
+<p>minidlna   MiniDLNA   媒体服务器（DLNA&#x2F;UPnP）   电视&#x2F;手机播放影音</p>
+<p>luci-app-transmission   Transmission   BT&#x2F;磁力链下载工具   离线下载服务</p>
+<p>luci-app-filetransfer   文件传输   Web端文件上传下载   临时文件分享</p>
+<p>luci-app-aliyundrive-webdav   阿里云盘WebDAV   挂载阿里云盘为网络存储   扩展路由器存储</p>
+<p>luci-app-aliyundrive-fuse   阿里云盘FUSE   通过FUSE挂载云盘   系统级云盘访问</p>
+<p>luci-app-linkease   易有云   轻量文件管理器   本地存储便捷管理</p>
+<p>luci-app-uugamebooster   UU加速器   游戏网络加速服务   降低游戏延迟</p>
+<p>📊 监控与日志<br>软件包名称   中文名称   功能说明   典型用途<br>luci-app-netdata   NetData   实时系统性能监控（CPU&#x2F;内存&#x2F;流量）   设备健康状态追踪</p>
+<p>luci-app-ntopng   Ntopng   深度网络流量分析与统计   流量溯源与审计</p>
+<p>luci-app-nethogs   NetHogs   按进程监控带宽占用   定位异常流量源</p>
+<p>luci-app-watchcat   WatchCat   网络异常检测与自动重启   保障7x24小时稳定</p>
+<p>syslog-ng   系统日志   集中日志收集与管理   故障排查依据</p>
+<p>ulogd-mod-ulog   网络日志   记录数据包元信息   安全审计</p>
+<p>💾 存储管理（重点插件）<br>软件包名称   中文名称   功能说明   典型用途<br>luci-app-diskman   磁盘管理   可视化磁盘管理：分区创建&#x2F;删除&#x2F;格式化、SMART健康检测、温度监控、多文件系统支持（ext4&#x2F;btrfs&#x2F;fat32等）、2048扇区对齐优化   家庭NAS搭建、服务器存储配置、磁盘健康预警（知识库[2][6]详述）</p>
+<p>kmod-usb-storage   USB存储支持   识别USB硬盘&#x2F;U盘   外接存储设备启用</p>
+<p>kmod-fs-ext4   EXT4支持   EXT4文件系统驱动   高性能本地存储</p>
+<p>kmod-fs-ntfs   NTFS支持   读写Windows NTFS分区   兼容Windows硬盘</p>
+<p>kmod-fs-vfat   FAT支持   FAT&#x2F;FAT32文件系统支持   U盘&#x2F;SD卡读写</p>
+<p>🌉 内网穿透与远程访问<br>软件包名称   中文名称   功能说明   典型用途<br>luci-app-frpc   Frp客户端   内网穿透客户端配置   外网访问家庭设备</p>
+<p>luci-app-frps   Frp服务端   内网穿透服务端部署   自建穿透服务器</p>
+<p>luci-app-nps   NPS   轻量级内网穿透工具   替代Frp方案</p>
+<p>luci-app-phtunnel   花生壳   花生壳内网穿透服务   零配置远程访问</p>
+<p>luci-app-ddns   动态DNS   多平台DDNS（阿里&#x2F;腾讯等）   动态IP域名绑定</p>
+<p>luci-app-aliddns   阿里DDNS   阿里云专属DDNS   阿里云用户优选</p>
+<p>luci-app-tencentddns   腾讯云DDNS   腾讯云专属DDNS   腾讯云用户优选</p>
+<p>luci-app-ddnsto   DDNSTO   远程控制与内网访问   无公网IP远程管理</p>
+<p>🎨 主题与个性化<br>软件包名称   中文名称   功能说明   典型用途<br>luci-app-advanced   高级设置   深度系统参数调整   高级用户定制</p>
+<p>luci-app-autoreboot   定时重启   按计划自动重启设备   维持长期稳定性</p>
+<p>luci-app-poweroff   关机   Web界面安全关机   远程设备管理</p>
+<p>luci-app-ramfree   释放内存   手动清理缓存释放内存   低内存设备优化</p>
+<p>🧰 其他实用工具<br>软件包名称   中文名称   功能说明   典型用途<br>luci-app-passwall &#x2F; passwall2   PassWall   代理工具（支持多种协议）   科学上网方案</p>
+<p>luci-app-ssr-plus   SSR+   ShadowsocksR增强版   代理客户端</p>
+<p>luci-app-clash &#x2F; openclash   Clash&#x2F;OpenClash   规则分流代理平台   高级代理管理</p>
+<p>luci-app-v2ray-server   V2Ray服务端   搭建V2Ray代理服务器   自建代理节点</p>
+<p>luci-app-omcproxy   组播代理   IPTV组播流转发   有线电视&#x2F;IPTV支持（知识库[1]提及）</p>
+<p>luci-app-iptvhelper   IPTV帮手   IPTV配置辅助工具   电视直播优化</p>
+<p>luci-app-udpxy   udpxy   UDP转HTTP代理   IPTV跨网段播放</p>
+<p>luci-app-wol   网络唤醒   远程唤醒局域网设备   节能设备管理</p>
+<p>luci-app-unblockmusic   网易云解锁   解除灰色歌曲限制   音乐服务增强</p>
+<p>luci-app-jd-dailybonus   京东签到   自动京东任务签到   日常薅羊毛</p>
+<p>luci-app-serverchan &#x2F; pushbot   微信&#x2F;全能推送   系统通知推送到微信等   运维告警</p>
+<p>luci-app-acme   ACME证书   Let’s Encrypt证书自动申请   HTTPS服务部署</p>
+<p>luci-app-docker &#x2F; dockerman   Docker   容器化应用部署   扩展路由器功能（如运行HomeAssistant）</p>
+<p>luci-app-lxc   LXC容器   轻量级系统容器   隔离环境运行服务</p>
+<p>luci-app-airplay2   AirPlay 2   音频接收器   手机音乐投送到路由器音响</p>
+<p>luci-app-vlmcsd   KMS服务器   局域网Windows&#x2F;Office激活   内网激活服务</p>
+<p>luci-app-mentohust   MentoHUST   锐捷校园网认证   高校网络接入</p>
+<p>luci-app-ttnode   甜糖星愿   自动采集任务   赚取积分&#x2F;奖励</p>
+<p>luci-app-familycloud   天翼云提速   天翼云盘加速   云盘下载优化</p>
+<p>luci-app-xlnetacc   迅雷快鸟   迅雷宽带加速   提升下载速度</p>
+<p>luci-app-chatgpt   ChatGPT Web   集成ChatGPT界面   本地AI助手</p>
+<p>luci-app-bypass   Bypass   代理分流规则管理   精细化流量调度</p>
+<p>openlist   列表管理   提供设备&#x2F;连接列表展示功能   网络设备可视化管理（知识库[1]提及）</p>
+<p>💡 说明：</p>
+<ol>
+<li>本表严格依据提供知识库内容整合，共涵盖 80+ 插件，覆盖网络、存储、安全、娱乐等核心场景；</li>
+<li>插件安装建议通过 LuCI “软件包管理器” 搜索安装，或使用 opkg install  命令；</li>
+<li>部分插件需依赖基础组件（如 luci-app-diskman 需 parted blkid），安装前请确认依赖；</li>
+<li>选择插件时请结合设备性能（内存&#x2F;CPU）与实际需求，避免资源过载；</li>
+<li>敏感插件（如代理类）请遵守当地法律法规使用。</li>
+</ol>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2026/01/31/Hexo-%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%BB%B4%E6%8A%A4%E6%89%8B%E5%86%8C-Ubuntu-%E7%89%88/" rel="prev" title="Hexo 个人博客维护手册 (Ubuntu 版)">
+                  <i class="fa fa-angle-left"></i> Hexo 个人博客维护手册 (Ubuntu 版)
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2026</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">John Doe</span>
+  </div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+</body>
+</html>
