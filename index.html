@@ -133,6 +133,10 @@
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">tags</span>
+      </div>
   </nav>
 </div>
 
@@ -147,126 +151,6 @@
     </div>
 
     <div class="main-inner index posts-expand">
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2026/01/31/GitHub%E5%8D%9A%E5%AE%A2%E6%92%B0%E5%86%99%E5%92%8C%E5%8F%91%E5%B8%83%E6%96%87%E7%AB%A0%E5%8F%8Aa%E6%9B%B4%E6%8D%A2i%E4%B8%BB%E9%A2%98%E7%9A%84%E8%AF%A6%E7%BB%86%E6%93%8D%E4%BD%9C/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content=" | Hexo">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2026/01/31/GitHub%E5%8D%9A%E5%AE%A2%E6%92%B0%E5%86%99%E5%92%8C%E5%8F%91%E5%B8%83%E6%96%87%E7%AB%A0%E5%8F%8Aa%E6%9B%B4%E6%8D%A2i%E4%B8%BB%E9%A2%98%E7%9A%84%E8%AF%A6%E7%BB%86%E6%93%8D%E4%BD%9C/" class="post-title-link" itemprop="url">Untitled</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-      
-
-      <time title="Created: 2026-01-31 18:49:29 / Modified: 18:50:13" itemprop="dateCreated datePublished" datetime="2026-01-31T18:49:29+08:00">2026-01-31</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>以下是详细的操作指南：</p>
-<hr>
-<h3 id="第一部分：如何撰写并发布文章（日常操作）"><a href="#第一部分：如何撰写并发布文章（日常操作）" class="headerlink" title="第一部分：如何撰写并发布文章（日常操作）"></a>第一部分：如何撰写并发布文章（日常操作）</h3><p>Hexo 的文章都是 <strong>Markdown</strong> 格式的文件。你以后发布文章的流程就像“写日记 -&gt; 预览 -&gt; 发布”一样简单。</p>
-<h4 id="1-新建文章"><a href="#1-新建文章" class="headerlink" title="1. 新建文章"></a>1. 新建文章</h4><p>在终端（Terminal）进入你的 <code>blog</code> 文件夹，输入：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo new <span class="string">&quot;我的第一篇文章&quot;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p><em>提示：系统会在 <code>source/_posts/</code> 目录下生成一个 <code>我的第一篇文章.md</code> 文件。</em></p>
-<h4 id="2-撰写内容"><a href="#2-撰写内容" class="headerlink" title="2. 撰写内容"></a>2. 撰写内容</h4><p>找到这个文件并编辑它。</p>
-<ul>
-<li><strong>推荐工具</strong>：在 Ubuntu 上，强烈推荐使用 <strong>VS Code</strong> 或 <strong>Typora</strong>（如果能安装的话）来编辑 Markdown。</li>
-<li><strong>文件格式</strong>：打开文件你会看到顶部有两条虚线，那是“Front-matter”，用来定义标题、时间、标签等。正文写在虚线下方即可。</li>
-</ul>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">我的第一篇文章</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2026-01-31 10:00:00</span></span><br><span class="line"><span class="attr">tags:</span> [<span class="string">生活</span>, <span class="string">随笔</span>]</span><br><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="string">这里写正文，支持</span> <span class="string">**加粗**、图片等</span> <span class="string">Markdown</span> <span class="string">语法...</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-
-
-<h4 id="3-本地预览（重要）"><a href="#3-本地预览（重要）" class="headerlink" title="3. 本地预览（重要）"></a>3. 本地预览（重要）</h4><p>写完后，先在本地看看效果，防止排版出错。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>打开浏览器访问 <code>http://localhost:4000</code>。如果不满意，改完文件保存，刷新浏览器就能看到变化（不需要重启 hexo s）。</p>
-<h4 id="4-一键发布"><a href="#4-一键发布" class="headerlink" title="4. 一键发布"></a>4. 一键发布</h4><p>预览没问题后，按 <code>Ctrl + C</code> 停止本地服务，然后执行那句熟悉的“三连击”：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>稍等片刻，你的 <code>jtzx082.github.io</code> 就会更新了。</p>
-<hr>
-<h3 id="第二部分：如何更换博客主题（装修指南）"><a href="#第二部分：如何更换博客主题（装修指南）" class="headerlink" title="第二部分：如何更换博客主题（装修指南）"></a>第二部分：如何更换博客主题（装修指南）</h3><p>Hexo 默认的主题（Landscape）比较朴素。我们可以换一个更漂亮、功能更强大的主题。</p>
-<p>这里以最经典、使用人数最多的 <strong>NexT</strong> 主题为例（风格简洁、像技术文档，非常专业），手把手教你换。</p>
-<h4 id="1-下载主题"><a href="#1-下载主题" class="headerlink" title="1. 下载主题"></a>1. 下载主题</h4><p>在终端进入博客根目录 <code>blog</code>，使用 git 将主题下载到 <code>themes</code> 文件夹：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 进入 themes 目录查看</span></span><br><span class="line"><span class="built_in">cd</span> themes</span><br><span class="line"></span><br><span class="line"><span class="comment"># 下载 NexT 主题</span></span><br><span class="line">git <span class="built_in">clone</span> https://github.com/next-theme/hexo-theme-next.git next</span><br><span class="line"></span><br><span class="line"><span class="comment"># 回到博客根目录</span></span><br><span class="line"><span class="built_in">cd</span> ..</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h4 id="2-启用主题"><a href="#2-启用主题" class="headerlink" title="2. 启用主题"></a>2. 启用主题</h4><p>打开博客根目录下的 <strong><code>_config.yml</code></strong> 文件（注意：是博客根目录的配置，不是 themes&#x2F;next 下的）：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">nano _config.yml</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>找到 <code>theme:</code> 这一行（通常在倒数几十行），把默认的 <code>landscape</code> 改为 <code>next</code>：</p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">theme:</span> <span class="string">next</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p><em>注意：<code>next</code> 前面要有一个空格。</em></p>
-<h4 id="3-验证并发布"><a href="#3-验证并发布" class="headerlink" title="3. 验证并发布"></a>3. 验证并发布</h4><p>先本地预览，看看新皮肤有没有穿上：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo s</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>如果浏览器里变成了黑白简约风格，说明更换成功！满意的话，执行 <code>hexo g &amp;&amp; hexo d</code> 发布。</p>
-<hr>
-<h3 id="给“高手”的进阶建议"><a href="#给“高手”的进阶建议" class="headerlink" title="给“高手”的进阶建议"></a>给“高手”的进阶建议</h3><ol>
-<li><strong>主题的配置</strong>：<br>每个主题在它自己的文件夹里（例如 <code>themes/next/</code>）都有一个独立的 <code>_config.yml</code> 配置文件。<br>你可以修改它来开启<strong>侧边栏头像</strong>、<strong>社交链接</strong>（GitHub、Email）、<strong>阅读量统计</strong>、<strong>评论系统</strong>等高级功能。建议去搜一下“Hexo Next 主题美化”，教程非常多。</li>
-<li><strong>图片处理</strong>：<br>这是新手最容易遇到的坑。Markdown 里的图片不能直接粘贴。<br><strong>推荐做法</strong>：</li>
-</ol>
-<ul>
-<li>在 Ubuntu 上安装 <strong>VS Code</strong>，并安装 <code>Paste Image</code> 插件。</li>
-<li>设置插件将图片保存到 <code>source/images</code> 目录。</li>
-<li>这样你在写文章时，截图后直接 <code>Ctrl+V</code>，图片就会自动保存并插入文章中。</li>
-</ul>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
 
     
 
@@ -331,6 +215,126 @@
 <h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2026/01/31/GitHub%E5%8D%9A%E5%AE%A2%E6%92%B0%E5%86%99%E5%92%8C%E5%8F%91%E5%B8%83%E6%96%87%E7%AB%A0%E5%8F%8A%E6%9B%B4%E6%8D%A2%E4%B8%BB%E9%A2%98%E7%9A%84%E8%AF%A6%E7%BB%86%E6%93%8D%E4%BD%9C/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | Hexo">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2026/01/31/GitHub%E5%8D%9A%E5%AE%A2%E6%92%B0%E5%86%99%E5%92%8C%E5%8F%91%E5%B8%83%E6%96%87%E7%AB%A0%E5%8F%8A%E6%9B%B4%E6%8D%A2%E4%B8%BB%E9%A2%98%E7%9A%84%E8%AF%A6%E7%BB%86%E6%93%8D%E4%BD%9C/" class="post-title-link" itemprop="url">GitHube博客撰写和发布文章及更换主题的详细操作</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2026-01-31 10:00:00 / Modified: 18:53:20" itemprop="dateCreated datePublished" datetime="2026-01-31T10:00:00+08:00">2026-01-31</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>以下是详细的操作指南：</p>
+<hr>
+<h3 id="第一部分：如何撰写并发布文章（日常操作）"><a href="#第一部分：如何撰写并发布文章（日常操作）" class="headerlink" title="第一部分：如何撰写并发布文章（日常操作）"></a>第一部分：如何撰写并发布文章（日常操作）</h3><p>Hexo 的文章都是 <strong>Markdown</strong> 格式的文件。你以后发布文章的流程就像“写日记 -&gt; 预览 -&gt; 发布”一样简单。</p>
+<h4 id="1-新建文章"><a href="#1-新建文章" class="headerlink" title="1. 新建文章"></a>1. 新建文章</h4><p>在终端（Terminal）进入你的 <code>blog</code> 文件夹，输入：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo new <span class="string">&quot;我的第一篇文章&quot;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><em>提示：系统会在 <code>source/_posts/</code> 目录下生成一个 <code>我的第一篇文章.md</code> 文件。</em></p>
+<h4 id="2-撰写内容"><a href="#2-撰写内容" class="headerlink" title="2. 撰写内容"></a>2. 撰写内容</h4><p>找到这个文件并编辑它。</p>
+<ul>
+<li><strong>推荐工具</strong>：在 Ubuntu 上，强烈推荐使用 <strong>VS Code</strong> 或 <strong>Typora</strong>（如果能安装的话）来编辑 Markdown。</li>
+<li><strong>文件格式</strong>：打开文件你会看到顶部有两条虚线，那是“Front-matter”，用来定义标题、时间、标签等。正文写在虚线下方即可。</li>
+</ul>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">我的第一篇文章</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2026-01-31 10:00:00</span></span><br><span class="line"><span class="attr">tags:</span> [<span class="string">生活</span>, <span class="string">随笔</span>]</span><br><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="string">这里写正文，支持</span> <span class="string">**加粗**、图片等</span> <span class="string">Markdown</span> <span class="string">语法...</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="3-本地预览（重要）"><a href="#3-本地预览（重要）" class="headerlink" title="3. 本地预览（重要）"></a>3. 本地预览（重要）</h4><p>写完后，先在本地看看效果，防止排版出错。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>打开浏览器访问 <code>http://localhost:4000</code>。如果不满意，改完文件保存，刷新浏览器就能看到变化（不需要重启 hexo s）。</p>
+<h4 id="4-一键发布"><a href="#4-一键发布" class="headerlink" title="4. 一键发布"></a>4. 一键发布</h4><p>预览没问题后，按 <code>Ctrl + C</code> 停止本地服务，然后执行那句熟悉的“三连击”：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>稍等片刻，你的 <code>jtzx082.github.io</code> 就会更新了。</p>
+<hr>
+<h3 id="第二部分：如何更换博客主题（装修指南）"><a href="#第二部分：如何更换博客主题（装修指南）" class="headerlink" title="第二部分：如何更换博客主题（装修指南）"></a>第二部分：如何更换博客主题（装修指南）</h3><p>Hexo 默认的主题（Landscape）比较朴素。我们可以换一个更漂亮、功能更强大的主题。</p>
+<p>这里以最经典、使用人数最多的 <strong>NexT</strong> 主题为例（风格简洁、像技术文档，非常专业），手把手教你换。</p>
+<h4 id="1-下载主题"><a href="#1-下载主题" class="headerlink" title="1. 下载主题"></a>1. 下载主题</h4><p>在终端进入博客根目录 <code>blog</code>，使用 git 将主题下载到 <code>themes</code> 文件夹：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 进入 themes 目录查看</span></span><br><span class="line"><span class="built_in">cd</span> themes</span><br><span class="line"></span><br><span class="line"><span class="comment"># 下载 NexT 主题</span></span><br><span class="line">git <span class="built_in">clone</span> https://github.com/next-theme/hexo-theme-next.git next</span><br><span class="line"></span><br><span class="line"><span class="comment"># 回到博客根目录</span></span><br><span class="line"><span class="built_in">cd</span> ..</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h4 id="2-启用主题"><a href="#2-启用主题" class="headerlink" title="2. 启用主题"></a>2. 启用主题</h4><p>打开博客根目录下的 <strong><code>_config.yml</code></strong> 文件（注意：是博客根目录的配置，不是 themes&#x2F;next 下的）：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">nano _config.yml</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>找到 <code>theme:</code> 这一行（通常在倒数几十行），把默认的 <code>landscape</code> 改为 <code>next</code>：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">theme:</span> <span class="string">next</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><em>注意：<code>next</code> 前面要有一个空格。</em></p>
+<h4 id="3-验证并发布"><a href="#3-验证并发布" class="headerlink" title="3. 验证并发布"></a>3. 验证并发布</h4><p>先本地预览，看看新皮肤有没有穿上：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo s</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>如果浏览器里变成了黑白简约风格，说明更换成功！满意的话，执行 <code>hexo g &amp;&amp; hexo d</code> 发布。</p>
+<hr>
+<h3 id="给“高手”的进阶建议"><a href="#给“高手”的进阶建议" class="headerlink" title="给“高手”的进阶建议"></a>给“高手”的进阶建议</h3><ol>
+<li><strong>主题的配置</strong>：<br>每个主题在它自己的文件夹里（例如 <code>themes/next/</code>）都有一个独立的 <code>_config.yml</code> 配置文件。<br>你可以修改它来开启<strong>侧边栏头像</strong>、<strong>社交链接</strong>（GitHub、Email）、<strong>阅读量统计</strong>、<strong>评论系统</strong>等高级功能。建议去搜一下“Hexo Next 主题美化”，教程非常多。</li>
+<li><strong>图片处理</strong>：<br>这是新手最容易遇到的坑。Markdown 里的图片不能直接粘贴。<br><strong>推荐做法</strong>：</li>
+</ol>
+<ul>
+<li>在 Ubuntu 上安装 <strong>VS Code</strong>，并安装 <code>Paste Image</code> 插件。</li>
+<li>设置插件将图片保存到 <code>source/images</code> 目录。</li>
+<li>这样你在写文章时，截图后直接 <code>Ctrl+V</code>，图片就会自动保存并插入文章中。</li>
+</ul>
 
       
     </div>
