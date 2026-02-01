@@ -188,9 +188,15 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">Posted on</span>
-      
 
-      <time title="Created: 2026-01-31 23:04:32 / Modified: 23:20:30" itemprop="dateCreated datePublished" datetime="2026-01-31T23:04:32+08:00">2026-01-31</time>
+      <time title="Created: 2026-01-31 23:04:32" itemprop="dateCreated datePublished" datetime="2026-01-31T23:04:32+08:00">2026-01-31</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2026-02-01 12:25:24" itemprop="dateModified" datetime="2026-02-01T12:25:24+08:00">2026-02-01</time>
     </span>
 
   
@@ -205,6 +211,7 @@
     <div class="post-body" itemprop="articleBody">
           <p>根据文件内容，我整理了其中包含的<strong>所有 luci-app 插件</strong>（共计 <strong>105</strong> 个），并按功能类别进行了分类和详细说明。</p>
 <p>以下是完整的 OpenWrt 插件清单：</p>
+<p>…</p>
 <h3 id="1-科学上网、VPN与代理-VPN-Proxy"><a href="#1-科学上网、VPN与代理-VPN-Proxy" class="headerlink" title="1. 科学上网、VPN与代理 (VPN &amp; Proxy)"></a>1. 科学上网、VPN与代理 (VPN &amp; Proxy)</h3><ul>
 <li><strong>luci-app-openclash</strong>: 功能强大的 Clash 客户端，支持策略分流、规则订阅。</li>
 <li><strong>luci-app-passwall</strong>: 流行的代理客户端，支持 SS&#x2F;SSR&#x2F;V2Ray&#x2F;Trojan 等多种协议。</li>
@@ -240,111 +247,15 @@
 <li><strong>luci-app-privoxy &#x2F; luci-app-tinyproxy &#x2F; luci-app-squid</strong>: 各种 Web 代理与缓存服务器（Privoxy 常用于去广告）。</li>
 <li><strong>luci-app-crowdsec-firewall-bouncer</strong>: 集成 CrowdSec 社区威胁情报的防火墙组件。</li>
 </ul>
-<h3 id="4-网络管理与带宽-Network-Management"><a href="#4-网络管理与带宽-Network-Management" class="headerlink" title="4. 网络管理与带宽 (Network Management)"></a>4. 网络管理与带宽 (Network Management)</h3><ul>
-<li><strong>luci-app-mwan3</strong>: 多宽带负载均衡与故障转移。</li>
-<li><strong>luci-app-syncdial</strong>: 多拨工具（并发拨号叠加带宽）。</li>
-<li><strong>luci-app-sqm</strong>: 智能队列管理，解决网络拥堵延迟（Bufferbloat）。</li>
-<li><strong>luci-app-qos &#x2F; luci-app-eqos</strong>: 服务质量管理，限速与流量优先级控制。</li>
-<li><strong>luci-app-pbr</strong>: 策略路由 (Policy Based Routing)。</li>
-<li><strong>luci-app-upnp</strong>: 通用即插即用（自动端口映射）。</li>
-<li><strong>luci-app-wol &#x2F; luci-app-timewol</strong>: 网络唤醒与定时唤醒。</li>
-<li><strong>luci-app-arpbind</strong>: IP&#x2F;MAC 地址绑定。</li>
-<li><strong>luci-app-firewall</strong>: 防火墙设置（系统核心组件）。</li>
-<li><strong>luci-app-bcp38</strong>: 防止 IP 源地址伪造。</li>
-<li><strong>luci-app-apinger</strong>: 网络链路连通性监控。</li>
-<li><strong>luci-app-keepalived</strong>: 高可用性故障切换 (VRRP)。</li>
-<li><strong>luci-app-lldpd</strong>: 链路层发现协议守护进程（用于拓扑发现）。</li>
-</ul>
-<h3 id="5-DNS-与域名服务-DNS-DDNS"><a href="#5-DNS-与域名服务-DNS-DDNS" class="headerlink" title="5. DNS 与域名服务 (DNS &amp; DDNS)"></a>5. DNS 与域名服务 (DNS &amp; DDNS)</h3><ul>
-<li><strong>luci-app-smartdns</strong>: 智能 DNS 服务器，优化解析速度和结果。</li>
-<li><strong>luci-app-https-dns-proxy</strong>: DoH (DNS over HTTPS) 代理。</li>
-<li><strong>luci-app-unbound</strong>: 强大的递归&#x2F;缓存 DNS 服务器。</li>
-<li><strong>luci-app-ddns &#x2F; luci-app-ddns-go</strong>: 动态域名解析客户端（Go 版本界面更现代）。</li>
-<li><strong>luci-app-nextdns</strong>: NextDNS 官方客户端。</li>
-</ul>
-<h3 id="6-下载、文件共享与存储-Storage-Sharing"><a href="#6-下载、文件共享与存储-Storage-Sharing" class="headerlink" title="6. 下载、文件共享与存储 (Storage &amp; Sharing)"></a>6. 下载、文件共享与存储 (Storage &amp; Sharing)</h3><ul>
-<li><strong>luci-app-aria2</strong>: 全能下载工具（HTTP&#x2F;FTP&#x2F;BT）。</li>
-<li><strong>luci-app-transmission &#x2F; luci-app-qbittorrent</strong>: 专业的 BT&#x2F;PT 下载客户端。</li>
-<li><strong>luci-app-amule</strong>: 电驴 (eD2k&#x2F;KAD) 下载客户端。</li>
-<li><strong>luci-app-xlnetacc</strong>: 迅雷快鸟&#x2F;下载加速。</li>
-<li><strong>luci-app-samba4 &#x2F; luci-app-ksmbd</strong>: Windows 文件共享 (SMB&#x2F;CIFS) 服务端。</li>
-<li><strong>luci-app-vsftpd</strong>: FTP 服务器。</li>
-<li><strong>luci-app-nfs</strong>: NFS 网络文件系统。</li>
-<li><strong>luci-app-cifs-mount</strong>: 挂载远程 SMB 共享到本地。</li>
-<li><strong>luci-app-rclone</strong>: 挂载云存储（如 OneDrive, Google Drive）。</li>
-<li><strong>luci-app-minidlna</strong>: DLNA&#x2F;UPnP 媒体服务器。</li>
-<li><strong>luci-app-dufs &#x2F; luci-app-filebrowser &#x2F; luci-app-filebrowser-go &#x2F; luci-app-filemanager</strong>: 各种 Web 端文件浏览器。</li>
-<li><strong>luci-app-diskman</strong>: 磁盘管理工具（分区、格式化）。</li>
-<li><strong>luci-app-hd-idle</strong>: 硬盘自动休眠工具。</li>
-</ul>
-<h3 id="7-系统运维与监控-System-Monitoring"><a href="#7-系统运维与监控-System-Monitoring" class="headerlink" title="7. 系统运维与监控 (System &amp; Monitoring)"></a>7. 系统运维与监控 (System &amp; Monitoring)</h3><ul>
-<li><strong>luci-app-ttyd</strong>: 网页版终端 (Web SSH)。</li>
-<li><strong>luci-app-statistics</strong>: 系统性能统计图表。</li>
-<li><strong>luci-app-nlbwmon</strong>: 详细的内网主机带宽流量监控。</li>
-<li><strong>luci-app-vnstat2</strong>: 历史流量统计。</li>
-<li><strong>luci-app-netdata</strong>: 实时炫酷的性能监控面板。</li>
-<li><strong>luci-app-watchcat</strong>: 断网&#x2F;故障自动重启（看门狗）。</li>
-<li><strong>luci-app-autoreboot &#x2F; luci-app-advanced-reboot</strong>: 定时重启与高级重启。</li>
-<li><strong>luci-app-attendedsysupgrade</strong>: 在线固件升级助手。</li>
-<li><strong>luci-app-package-manager</strong>: 软件包管理器。</li>
-<li><strong>luci-app-cpulimit</strong>: 进程 CPU 占用限制。</li>
-<li><strong>luci-app-ramfree</strong>: 内存释放工具。</li>
-<li><strong>luci-app-irqbalance</strong>: 中断负载均衡（优化多核性能）。</li>
-<li><strong>luci-app-commands</strong>: 自定义 Shell 命令菜单。</li>
-<li><strong>luci-app-xinetd</strong>: 超级守护进程管理。</li>
-<li><strong>luci-app-snmpd</strong>: SNMP 服务端（用于远程监控）。</li>
-<li><strong>luci-app-log-viewer</strong> (隐含在 luci-base 或 openlist 中，列表中未直接出现单体包，但属于常用功能)。</li>
-</ul>
-<h3 id="8-Docker-与虚拟化-Virtualization"><a href="#8-Docker-与虚拟化-Virtualization" class="headerlink" title="8. Docker 与虚拟化 (Virtualization)"></a>8. Docker 与虚拟化 (Virtualization)</h3><ul>
-<li><strong>luci-app-docker</strong>: Docker 引擎配置。</li>
-<li><strong>luci-app-dockerman</strong>: Docker 容器 Web 管理界面。</li>
-<li><strong>luci-app-lxc</strong>: LXC 容器管理。</li>
-</ul>
-<h3 id="9-无线与物联网-Wireless-IoT"><a href="#9-无线与物联网-Wireless-IoT" class="headerlink" title="9. 无线与物联网 (Wireless &amp; IoT)"></a>9. 无线与物联网 (Wireless &amp; IoT)</h3><ul>
-<li><strong>luci-app-wifi-schedule</strong>: WiFi 定时开关。</li>
-<li><strong>luci-app-usteer</strong>: WiFi 漫游辅助 (802.11k&#x2F;v&#x2F;r)。</li>
-<li><strong>luci-app-dawn</strong>: 分布式 WiFi 管理器。</li>
-<li><strong>luci-app-travelmate</strong>: 旅行路由器工具（自动连接公共热点）。</li>
-<li><strong>luci-app-coovachilli &#x2F; luci-app-openwisp</strong>: 热点认证网关与控制器。</li>
-<li><strong>luci-app-dcwapd</strong>: 无线 AP 控制器守护进程。</li>
-<li><strong>luci-app-mosquitto</strong>: MQTT 消息代理（智能家居常用）。</li>
-<li><strong>luci-app-lorawan-basicstation</strong>: LoRaWAN 网关配置。</li>
-<li><strong>luci-app-3ginfo-lite &#x2F; luci-app-modemband &#x2F; luci-app-sms-tool-js</strong>: 3G&#x2F;4G&#x2F;5G 模组信息、频段锁定与短信工具。</li>
-<li><strong>luci-app-dump1090</strong>: 接收飞机 ADS-B 信号。</li>
-</ul>
-<h3 id="10-校园网与认证-Campus-Auth"><a href="#10-校园网与认证-Campus-Auth" class="headerlink" title="10. 校园网与认证 (Campus Auth)"></a>10. 校园网与认证 (Campus Auth)</h3><ul>
-<li><strong>luci-app-sysuh3c</strong>: 中山大学 H3C 认证。</li>
-<li><strong>luci-app-scutclient</strong>: 华南理工大学认证。</li>
-<li><strong>luci-app-njitclient</strong>: 南京工程学院认证。</li>
-<li><strong>luci-app-bitsrunlogin-go</strong>: 深澜校园网认证。</li>
-<li><strong>luci-app-cd8021x</strong>: 802.1x 有线认证。</li>
-<li><strong>luci-app-ua2f</strong>: 修改 User-Agent（用于绕过部分校园网检测）。</li>
-</ul>
-<h3 id="11-其它服务与工具-Others"><a href="#11-其它服务与工具-Others" class="headerlink" title="11. 其它服务与工具 (Others)"></a>11. 其它服务与工具 (Others)</h3><ul>
-<li><strong>luci-app-unblockneteasemusic</strong>: 解锁网易云音乐灰色歌曲。</li>
-<li><strong>luci-app-airplay2</strong>: 苹果 AirPlay 音频接收端。</li>
-<li><strong>luci-app-spotifyd</strong>: Spotify 音乐播放器。</li>
-<li><strong>luci-app-music-remote-center</strong>: 音乐遥控中心。</li>
-<li><strong>luci-app-wechatpush</strong>: 微信&#x2F;钉钉状态推送。</li>
-<li><strong>luci-app-vlmcsd</strong>: KMS 激活服务器。</li>
-<li><strong>luci-app-udpxy &#x2F; luci-app-msd_lite &#x2F; luci-app-omcproxy</strong>: IPTV 组播转单播工具。</li>
-<li><strong>luci-app-usb-printer &#x2F; luci-app-p910nd</strong>: USB 打印服务器。</li>
-<li><strong>luci-app-mjpg-streamer</strong>: USB 摄像头视频流服务。</li>
-<li><strong>luci-app-ser2net</strong>: 串口转网络（远程控制串口设备）。</li>
-<li><strong>luci-app-chrony</strong>: 精确的时间同步服务器。</li>
-<li><strong>luci-app-email</strong>: 邮件发送配置。</li>
-<li><strong>luci-app-clamav</strong>: 杀毒软件。</li>
-<li><strong>luci-app-radicale2</strong>: 卡片与日历同步服务器 (CardDAV&#x2F;CalDAV)。</li>
-<li><strong>luci-app-rustdesk-server</strong>: RustDesk 远程桌面自建服务器。</li>
-<li><strong>luci-app-syncthing</strong>: 文件自动同步工具。</li>
-<li><strong>luci-app-pppoe-server &#x2F; luci-app-rp-pppoe-server &#x2F; luci-app-pppoe-relay</strong>: PPPoE 拨号服务器与中继。</li>
-<li><strong>luci-app-ps3netsrv</strong>: PS3 游戏网络加载服务。</li>
-<li><strong>luci-app-splash</strong>: 强制门户（Splash Page）。</li>
-<li><strong>luci-app-oscam</strong>: 数字电视读卡服务。</li>
-<li><strong>luci-app-3cat &#x2F; luci-app-argon-config &#x2F; luci-app-openlist</strong>: 主题配置与列表管理。</li>
-<li><strong>luci-app-babeld &#x2F; luci-app-bmx7 &#x2F; luci-app-olsr &#x2F; luci-app-olsr-services &#x2F; luci-app-olsr-viz</strong>: 各种 Mesh 动态路由协议。</li>
-</ul>
-
+<h3 id="4-网络管理与带宽-Network-Management"><a href="#4-网络管理与带宽-Network-Management" class="headerlink" title="4. 网络管理与带宽 (Network Management)"></a>4. 网络管理与带宽 (Network Management)</h3>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2026/01/31/OpenWrt%E6%8F%92%E4%BB%B6%E5%85%A8%E8%A7%88%E8%A1%A8/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -422,126 +333,15 @@
 <ul>
 <li><strong>系统反馈</strong>：会在 <code>source/_posts/</code> 目录下生成一个同名的 <code>.md</code> 文件。</li>
 </ul>
-<h3 id="2-撰写内容"><a href="#2-撰写内容" class="headerlink" title="2. 撰写内容"></a>2. 撰写内容</h3><p>使用文本编辑器（推荐 VS Code）打开生成的 <code>.md</code> 文件。<br><strong>注意头部信息（Front-matter）格式</strong>：</p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">文章标题</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2026-01-31 10:00:00</span></span><br><span class="line"><span class="attr">tags:</span> [<span class="string">Linux</span>, <span class="string">OpenWrt</span>]    <span class="comment"># 标签</span></span><br><span class="line"><span class="attr">categories:</span> [<span class="string">技术</span>, <span class="string">教程</span>]   <span class="comment"># 分类</span></span><br><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="string">（在此处开始写正文，支持</span> <span class="string">Markdown</span> <span class="string">语法...）</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h3 id="3-本地预览-必做"><a href="#3-本地预览-必做" class="headerlink" title="3. 本地预览 (必做)"></a>3. 本地预览 (必做)</h3><p>发布前务必在本地检查排版和图片是否正常。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo cl &amp;&amp; hexo s</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<ul>
-<li><code>cl</code> (clean): 清理缓存，防止旧样式干扰。</li>
-<li><code>s</code> (server): 启动本地预览服务器。</li>
-<li><strong>查看</strong>：浏览器访问 <code>http://localhost:4000</code>。</li>
-<li><strong>退出</strong>：在终端按 <code>Ctrl + C</code>。</li>
-</ul>
-<h3 id="4-一键发布"><a href="#4-一键发布" class="headerlink" title="4. 一键发布"></a>4. 一键发布</h3><p>确认无误后，执行“三连击”发布到 GitHub：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo cl &amp;&amp; hexo g &amp;&amp; hexo d</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<ul>
-<li><code>g</code> (generate): 生成静态网页。</li>
-<li><code>d</code> (deploy): 推送到 GitHub 仓库。</li>
-<li><em>等待约 1-2 分钟，访问 <code>https://jtzx082.github.io</code> 查看更新。</em></li>
-</ul>
-<hr>
-<h2 id="二、-主题更换与配置（进阶操作）"><a href="#二、-主题更换与配置（进阶操作）" class="headerlink" title="二、 主题更换与配置（进阶操作）"></a>二、 主题更换与配置（进阶操作）</h2><p>当你想要改变网站外观，或修改侧边栏信息时使用。</p>
-<h3 id="1-更换新主题-通用流程"><a href="#1-更换新主题-通用流程" class="headerlink" title="1. 更换新主题 (通用流程)"></a>1. 更换新主题 (通用流程)</h3><p>以安装 <code>NexT</code> 主题为例：</p>
-<ol>
-<li><strong>下载主题</strong>：</li>
-</ol>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/next-theme/hexo-theme-next themes/next</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-
-<ol start="2">
-<li><strong>启用主题</strong>：<br>修改<strong>站点配置文件</strong> <code>_config.yml</code>（位于博客根目录）：</li>
-</ol>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">theme:</span> <span class="string">next</span>  <span class="comment"># 修改这里</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-
-<ol start="3">
-<li><strong>验证</strong>：<code>hexo cl &amp;&amp; hexo s</code></li>
-</ol>
-<h3 id="2-常用个性化配置"><a href="#2-常用个性化配置" class="headerlink" title="2. 常用个性化配置"></a>2. 常用个性化配置</h3><p>修改<strong>主题配置文件</strong> <code>themes/next/_config.yml</code>（注意不是根目录那个）：</p>
-<ul>
-<li><strong>切换风格 (Scheme)</strong>：<br>搜索 <code>scheme</code>，<strong>确保同一时间只有一个 scheme 被启用</strong>（即没有被 <code>#</code> 注释掉），其他的必须注释。</li>
-</ul>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#scheme: Muse</span></span><br><span class="line"><span class="comment">#scheme: Mist</span></span><br><span class="line"><span class="comment">#scheme: Pisces</span></span><br><span class="line"><span class="attr">scheme:</span> <span class="string">Gemini</span>   <span class="comment"># 当前使用的风格</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-
-<ul>
-<li><strong>开启代码复制按钮</strong>：<br>搜索 <code>codeblock</code> -&gt; <code>copy_button</code> -&gt; <code>enable: true</code>。</li>
-<li><strong>开启数学公式 (化学教学专用)</strong>：<br>搜索 <code>math</code> -&gt; <code>mathjax</code> -&gt; <code>enable: true</code>。（写文章时需在头部加入 <code>mathjax: true</code> 才能渲染化学公式）。</li>
-</ul>
-<hr>
-<h2 id="三、-环境搭建全流程备份（重装备用）"><a href="#三、-环境搭建全流程备份（重装备用）" class="headerlink" title="三、 环境搭建全流程备份（重装备用）"></a>三、 环境搭建全流程备份（重装备用）</h2><p>如果未来你换了新电脑（Linux），只需照此步骤即可复原环境。</p>
-<ol>
-<li><strong>安装基础环境</strong>：</li>
-</ol>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt update</span><br><span class="line"><span class="built_in">sudo</span> apt install git nodejs npm -y</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-
-<ol start="2">
-<li><strong>配置 SSH 密钥</strong>（连接 GitHub 关键）：</li>
-</ol>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t ed25519 -C <span class="string">&quot;你的邮箱&quot;</span></span><br><span class="line"><span class="built_in">cat</span> ~/.ssh/id_ed25519.pub  <span class="comment"># 复制公钥到 GitHub Settings -&gt; SSH Keys</span></span><br><span class="line">ssh -T git@github.com      <span class="comment"># 测试连通性</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-
-<ol start="3">
-<li><strong>安装 Hexo</strong>：</li>
-</ol>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> npm install -g hexo-cli</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-
-<ol start="4">
-<li><strong>拉取源码或重新初始化</strong>：</li>
-</ol>
-<ul>
-<li><em>如果是新电脑恢复</em>：建议平时把博客源码（除了 <code>public</code> 和 <code>node_modules</code>）备份到一个单独的 GitHub 仓库。</li>
-<li><em>如果是从零新建</em>：<code>hexo init blog</code> -&gt; <code>npm install</code>。</li>
-</ul>
-<ol start="5">
-<li><strong>安装部署插件</strong>（容易遗忘）：</li>
-</ol>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-
-
-<hr>
-<h2 id="四、-常见报错与急救"><a href="#四、-常见报错与急救" class="headerlink" title="四、 常见报错与急救"></a>四、 常见报错与急救</h2><table>
-<thead>
-<tr>
-<th>报错信息片段</th>
-<th>常见原因</th>
-<th>解决方案</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><code>YAMLException: duplicated mapping key</code></td>
-<td>配置文件里有重复的键（如两个 <code>scheme</code> 开启）</td>
-<td>检查 <code>_config.yml</code>，注释掉冲突的项。</td>
-</tr>
-<tr>
-<td><code>YAMLException: bad indentation</code></td>
-<td>缩进错误</td>
-<td>确保冒号 <code>:</code> 后有空格，缩进使用 2 个空格。</td>
-</tr>
-<tr>
-<td><code>ERROR Deployer not found: git</code></td>
-<td>没安装 git 部署插件</td>
-<td>运行 <code>npm install hexo-deployer-git --save</code></td>
-</tr>
-<tr>
-<td><code>Permission denied (publickey)</code></td>
-<td>SSH 密钥失效或未配置</td>
-<td>重新配置 SSH 密钥并添加到 GitHub。</td>
-</tr>
-<tr>
-<td>网页显示乱码或布局错乱</td>
-<td>缓存问题</td>
-<td>运行 <code>hexo cl</code> 清理缓存后再生成。</td>
-</tr>
-</tbody></table>
-<hr>
-
+<h3 id="2-撰写内容"><a href="#2-撰写内容" class="headerlink" title="2. 撰写内容"></a>2. 撰写内容</h3>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2026/01/31/Hexo-%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%BB%B4%E6%8A%A4%E6%89%8B%E5%86%8C-Ubuntu-%E7%89%88/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -617,12 +417,14 @@
 
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
 <h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2026/01/31/hello-world/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -699,50 +501,14 @@
 
 <p><em>提示：系统会在 <code>source/_posts/</code> 目录下生成一个 <code>我的第一篇文章.md</code> 文件。</em></p>
 <h4 id="2-撰写内容"><a href="#2-撰写内容" class="headerlink" title="2. 撰写内容"></a>2. 撰写内容</h4><p>找到这个文件并编辑它。</p>
-<ul>
-<li><strong>推荐工具</strong>：在 Ubuntu 上，强烈推荐使用 <strong>VS Code</strong> 或 <strong>Typora</strong>（如果能安装的话）来编辑 Markdown。</li>
-<li><strong>文件格式</strong>：打开文件你会看到顶部有两条虚线，那是“Front-matter”，用来定义标题、时间、标签等。正文写在虚线下方即可。</li>
-</ul>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">我的第一篇文章</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2026-01-31 10:00:00</span></span><br><span class="line"><span class="attr">tags:</span> [<span class="string">生活</span>, <span class="string">随笔</span>]</span><br><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="string">这里写正文，支持</span> <span class="string">**加粗**、图片等</span> <span class="string">Markdown</span> <span class="string">语法...</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-
-
-<h4 id="3-本地预览（重要）"><a href="#3-本地预览（重要）" class="headerlink" title="3. 本地预览（重要）"></a>3. 本地预览（重要）</h4><p>写完后，先在本地看看效果，防止排版出错。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>打开浏览器访问 <code>http://localhost:4000</code>。如果不满意，改完文件保存，刷新浏览器就能看到变化（不需要重启 hexo s）。</p>
-<h4 id="4-一键发布"><a href="#4-一键发布" class="headerlink" title="4. 一键发布"></a>4. 一键发布</h4><p>预览没问题后，按 <code>Ctrl + C</code> 停止本地服务，然后执行那句熟悉的“三连击”：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>稍等片刻，你的 <code>jtzx082.github.io</code> 就会更新了。</p>
-<hr>
-<h3 id="第二部分：如何更换博客主题（装修指南）"><a href="#第二部分：如何更换博客主题（装修指南）" class="headerlink" title="第二部分：如何更换博客主题（装修指南）"></a>第二部分：如何更换博客主题（装修指南）</h3><p>Hexo 默认的主题（Landscape）比较朴素。我们可以换一个更漂亮、功能更强大的主题。</p>
-<p>这里以最经典、使用人数最多的 <strong>NexT</strong> 主题为例（风格简洁、像技术文档，非常专业），手把手教你换。</p>
-<h4 id="1-下载主题"><a href="#1-下载主题" class="headerlink" title="1. 下载主题"></a>1. 下载主题</h4><p>在终端进入博客根目录 <code>blog</code>，使用 git 将主题下载到 <code>themes</code> 文件夹：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 进入 themes 目录查看</span></span><br><span class="line"><span class="built_in">cd</span> themes</span><br><span class="line"></span><br><span class="line"><span class="comment"># 下载 NexT 主题</span></span><br><span class="line">git <span class="built_in">clone</span> https://github.com/next-theme/hexo-theme-next.git next</span><br><span class="line"></span><br><span class="line"><span class="comment"># 回到博客根目录</span></span><br><span class="line"><span class="built_in">cd</span> ..</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h4 id="2-启用主题"><a href="#2-启用主题" class="headerlink" title="2. 启用主题"></a>2. 启用主题</h4><p>打开博客根目录下的 <strong><code>_config.yml</code></strong> 文件（注意：是博客根目录的配置，不是 themes&#x2F;next 下的）：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">nano _config.yml</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>找到 <code>theme:</code> 这一行（通常在倒数几十行），把默认的 <code>landscape</code> 改为 <code>next</code>：</p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">theme:</span> <span class="string">next</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p><em>注意：<code>next</code> 前面要有一个空格。</em></p>
-<h4 id="3-验证并发布"><a href="#3-验证并发布" class="headerlink" title="3. 验证并发布"></a>3. 验证并发布</h4><p>先本地预览，看看新皮肤有没有穿上：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo s</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>如果浏览器里变成了黑白简约风格，说明更换成功！满意的话，执行 <code>hexo g &amp;&amp; hexo d</code> 发布。</p>
-<hr>
-<h3 id="给“高手”的进阶建议"><a href="#给“高手”的进阶建议" class="headerlink" title="给“高手”的进阶建议"></a>给“高手”的进阶建议</h3><ol>
-<li><strong>主题的配置</strong>：<br>每个主题在它自己的文件夹里（例如 <code>themes/next/</code>）都有一个独立的 <code>_config.yml</code> 配置文件。<br>你可以修改它来开启<strong>侧边栏头像</strong>、<strong>社交链接</strong>（GitHub、Email）、<strong>阅读量统计</strong>、<strong>评论系统</strong>等高级功能。建议去搜一下“Hexo Next 主题美化”，教程非常多。</li>
-<li><strong>图片处理</strong>：<br>这是新手最容易遇到的坑。Markdown 里的图片不能直接粘贴。<br><strong>推荐做法</strong>：</li>
-</ol>
-<ul>
-<li>在 Ubuntu 上安装 <strong>VS Code</strong>，并安装 <code>Paste Image</code> 插件。</li>
-<li>设置插件将图片保存到 <code>source/images</code> 目录。</li>
-<li>这样你在写文章时，截图后直接 <code>Ctrl+V</code>，图片就会自动保存并插入文章中。</li>
-</ul>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2026/01/31/GitHub%E5%8D%9A%E5%AE%A2%E6%92%B0%E5%86%99%E5%92%8C%E5%8F%91%E5%B8%83%E6%96%87%E7%AB%A0%E5%8F%8A%E6%9B%B4%E6%8D%A2%E4%B8%BB%E9%A2%98%E7%9A%84%E8%AF%A6%E7%BB%86%E6%93%8D%E4%BD%9C/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
